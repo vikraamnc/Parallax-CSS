@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+/* hero */
+.hero {
+  height: 90vh;
+  position: relative;
+
+  /* background: black; */
+  color: aliceblue;
+}
+
+.hero > div {
+  position: absolute;
+  background: grey;
+  left: 10vw;
+  top: 30vh;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* nav section */
+nav {
+  background: rgb(62, 104, 8);
+  color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding: 0.5rem 4rem;
+  padding: auto;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+nav ul li {
+  cursor: pointer;
+  transition: all 2s;
+}
+nav ul li:hover {
+  color: orange;
+  /* font-size:2rem; */
+  transform: scale(1.3);
+}
+.down {
+  position: absolute;
+  rotate: 90deg;
+  animation: sign 1s infinite;
+}
+@keyframes sign {
+  0% {
+    top: 70vh;
+    left: 50%;
+  }
+
+  100% {
+    top: 80vh;
+    left: 50%;
+  }
+}
+
+/* .down {
+  font-size: 5rem;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  color: white;
+  animation: goDown 1s infinite;
+  transform: rotate(90deg);
+}
+@keyframes goDown {
+  0% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 100px;
+  } */
+
+/* =========paragraph */
+section.container {
+  padding: 3rem;
+}
+/* ======images */
+/* .img0,
+.img1,
+.img2,
+.img3,
+.img4 { */
+
+[class^="img"] {
+  background: rgb(221, 7, 7);
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img0 {
+  background: url(./assets/pic2.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img1 {
+  background: url(./assets/pic2.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img2 {
+  background: url(./assets/pic2.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img3 {
+  background: url(./assets/pic4.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img4 {
+  background: url(./assets/pic5.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  background: rgba(201, 233, 233, 0.286);
+  color: white;
+  font-size: 2rem;
+  padding: 1.4rem 5rem;
+  border-radius: 10px;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+footer {
+  background: black;
+  color: white;
+
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
